@@ -20,6 +20,7 @@ app.get('/',(req,res)=>{
 
 app.post('/api/case', async (req, res) => {
     try {
+        res.send("Server run  post ")
         const payload = { cnr: req.body.cnr };
 
         const response = await axios.post(
