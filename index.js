@@ -13,6 +13,9 @@ app.use(cors({
     credentials: true,
 }));
 
+app.get('/',(req,res)=>{
+    res.send("Server run api")
+})
 
 
 app.post('/api/case', async (req, res) => {
