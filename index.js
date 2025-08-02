@@ -13,10 +13,7 @@ app.use(cors({
     credentials: true,
 }));
 
-app.options('*', cors({
-    origin: 'https://frontend-crnweb.vercel.app',
-    credentials: true,
-}));
+
 
 app.post('/api/case', async (req, res) => {
     try {
